@@ -1,3 +1,8 @@
+main {
+  width: 1400px;
+  height: 100px;
+  margin: 0 auto;
+}
 @font-face {
   font-family: "TTLaundryGothicB";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2")
@@ -5,34 +10,18 @@
   font-weight: 700;
   font-style: normal;
 }
-
+/* 오늘의 패키지 */
 .news {
   font-size: 50px;
-  width: 350px;
+  width: 500px;
   display: flex;
   justify-content: space-between;
   font-family: TTLaundryGothicB;
 }
-.introBox {
-  display: flex;
-  justify-content: space-around;
-  width: 1300px;
-  margin: 0 auto;
-}
-.intro {
-  background-color: antiquewhite;
-  width: 70%;
-  height: 600px;
-  box-shadow: 10px 10px 5px 0 #ccc;
-}
-.introContents {
-  width: 20%;
-  padding: 20px;
-}
 
+/* 패키지박스 */
 .contentsBox {
-  width: 1300px;
-  margin: 0 auto;
+  width: 1400px;
   display: flex;
   justify-content: space-between;
   line-height: 25px;
@@ -53,25 +42,35 @@
 }
 
 @font-face {
-  font-family: 'BMJUA';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+  font-family: "BMJUA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 .title {
-  height: 80px;
-  font-size: 30px;
+  height: 50px;
+  font-size: 26px;
   text-align: center;
-  line-height: 80px;
-  font-family:BMJUA ;
+  line-height: 40px;
+  font-family: BMJUA;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 @font-face {
-  font-family: 'NanumBarunGothic';
+  font-family: "NanumBarunGothic";
   font-style: normal;
   font-weight: 400;
-  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
- }
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
 .contents {
   padding: 0 10px;
   height: 190px;
@@ -86,6 +85,38 @@
 }
 .img {
   width: 410px;
-  height: 300px;
-  border-radius: 0 0 50px 50px;
+  height: 400px;
+  border-radius: 50px 50px 0 0;
+}
+
+.newContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.new1 {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 680px;
+  padding: 20px;
+}
+.new1 p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  height: 70px;
+}
+
+.newButton {
+  display: inline-block;
+  border: none;
+  background: #52de52;
+  color: white;
+  width: 70px;
+  height: 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
 }
