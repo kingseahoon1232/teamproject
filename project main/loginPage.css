@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+
+.whole_Area {
+    width: 1400px;
+    height: 1000px;
+    background-color:white;
+}
+
+.letf_Img {
+    width: 40%;
+    height: 100%;
+    background-image: url(https://i.pinimg.com/736x/01/58/e7/0158e7e85e47787aea0a8800884f2c55.jpg);
+
+    background-size: 100% 100%;
+    margin-left: 0;
+}
+
+.textbox{
+    padding-top: 110%;
+    width: 580px;
+    text-align: center;
+    color:white;
+    line-height: 60px;
+}
+@font-face {
+    font-family: 'MoiraiOne-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/MoiraiOne-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HSBombaram3_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+div h1:nth-child(1){
+    font-family:HSBombaram3_Regular;
+    text-shadow: 2px 2px 2px black;
+    font-size:7em;
+}
+h1, h2{
+    font-family:HSBombaram3_Regular;
+    text-shadow: 4px 4px 4px black;
+
+}
