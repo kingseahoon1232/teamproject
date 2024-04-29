@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'BookkMyungjo-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    width: 1400px;
+    margin: auto;
+
+}
+
 /* =================네비바================= */
 
 #header {
@@ -163,7 +176,6 @@ main {
     height: 50px;
     width: 1400px;
     background-color: rgb(236, 237, 232);
-
     text-align: center;
     line-height: 50px;
     color: white;
@@ -173,6 +185,9 @@ main {
     margin-bottom: 20px;
     margin-top: 50px;
     position: relative;
+
+
+    font-family: BookkMyungjo-Bd;
 }
 
 .travleAreaClassify {
@@ -193,6 +208,8 @@ main {
 .travleAreaClassify>ul>li a {
     text-decoration-line: none;
     color: black;
+
+    font-family: BookkMyungjo-Bd;
 }
 
 .border-separator {
@@ -200,142 +217,137 @@ main {
 }
 
 /* ======== 지역별 여행지 소개 메인 박스 ========= */
-.firstTravleAreaContain {
+.travleAreaMainContniner {
     width: 1400px;
-    margin: auto;
-}
-
-.mainTravleAreaContain {
-    width: 50%;
-    height: 500px;
-
-    float: left;
-    display: inline-block;
-    text-align: center;
-
-    color: white;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
-.mainTravleAreaContainImg {
+.travleAreaMain_1_1 {
     width: 650px;
-    height: 500px;
-    float: left;
-    position: relative;
+    height: 650px;
+    background: url(/project\ main/image/image/boseongGreentee1.jpg) no-repeat center/cover;
+    display: flex;
 }
 
-/* .none{
-    text-decoration: none;
-} */
-
-.mainTravleAreaContainText {
-    width: 690px;
+.travleAreaMain_1_1_TextArea {
+    width: 650px;
+    height: 650px;
+    box-sizing: border-box;
+    display: flex;
     color: white;
-    text-shadow: 2px 2px 2px black;
-    position: absolute;
-}
-
-.imgInTextTitle {
-    margin-top: 180px;
-    font-size: 30px;
+    font-family: BookkMyungjo-Bd;
+    text-align: center;
+    display: inline-block;
+    text-shadow: 4px 2px 2px black;
     letter-spacing: 5px;
-    margin-bottom: 25px;
 }
 
-.mainTravleAreaContainText>p {
+.travleAreaMain_1_1_TextArea>h4 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30%;
+    margin-bottom: 5%;
+}
+
+.travleAreaMain_1_1_TextArea>h5 {
     font-size: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 20%;
 }
 
-.mainTravleAreaContainTextSuffix {
+.travleAreaMain_1_1_TextArea>p {
     display: inline-block;
-}
-
-.mainTravleAreaContainTextSuffix>p {
-    display: inline-block;
-    text-shadow: 2px 2px 2px black;
     outline: 1px solid white;
     border-radius: 10px;
+    width: 200px;
     margin-right: 10px;
-    width: 150px;
-    font-size: 18px;
+    margin-left: 10px;
 }
 
-
-.mainTravleAreaContain:hover {
-    background-color: white;
-    opacity: .8;
-}
-
-
-.subTravleAreaContain {
+.travleAreaMain_1_2 {
     width: 700px;
-    height: 250px;
-
-    float: right;
+    height: 300px;
+    background: url(/project\ main/image/image/House_of_Choe_Champan_2.jpg);
+    display: flex;
+    margin-left: 50px;
 }
 
-.subTravleAreaContain_1 {
-    width: 690px;
-    height: 225px;
-    float: right;
-    position: relative;
-
-}
-
-.subTravleAreaContain_2 {
-    width: 690px;
-    height: 225px;
-    margin-top: 25px;
-    float: right;
-    position: relative;
-
-}
-
-.mainTravleAreaContainText2 {
-    margin-top: 40px;
-    text-align: center;
-    width: 690px;
-    margin-left: 10px;
-    text-shadow: 2px 2px 2px black;
-    position: absolute;
+.travleAreaMain_1_2_TextArea {
+    width: 700px;
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
     color: white;
-}
-
-.imgInTextTitle2 {
-    font-size: 30px;
-    margin-bottom: 15px;
-    letter-spacing: 5px;
-
-}
-
-.imgInTextTitle2+p {
-    font-size: 25px;
-    margin-bottom: 40px;
-}
-
-.mainTravleAreaContainTextSuffix2>p {
+    font-family: BookkMyungjo-Bd;
+    text-align: center;
     display: inline-block;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 4px 2px 2px black;
+    letter-spacing: 5px;
+}
+
+.travleAreaMain_1_2_TextArea>h4 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+
+.travleAreaMain_1_2_TextArea>h5 {
+    font-size: 19px;
+    margin-bottom: 7%;
+}
+
+.travleAreaMain_1_2_TextArea>p {
+    display: inline-block;
     outline: 1px solid white;
     border-radius: 10px;
+    width: 200px;
     margin-right: 10px;
-    width: 150px;
-    font-size: 18px;
-    color: white;
-}
-
-.mainTravleAreaContainText2_2 {
-    margin-top: 70px;
-    text-align: center;
-    width: 690px;
     margin-left: 10px;
-    text-shadow: 2px 2px 2px black;
-    position: absolute;
-    color: white;
 }
 
-.subTravleAreaContain:hover{
-    background-color: white;
-    opacity: .8;
+.travleAreaMain_1_3 {
+    width: 700px;
+    height: 300px;
+    background: url(/project\ main/image/image/Seongnyugul_Cave.jpg);
+    display: flex;
+    margin-left: 50px;
+}
+
+.travleAreaMain_1_3_TextArea {
+    width: 700px;
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    color: white;
+    font-family: BookkMyungjo-Bd;
+    text-align: center;
+    display: inline-block;
+    text-shadow: 4px 2px 2px black;
+    letter-spacing: 5px;
+}
+
+.travleAreaMain_1_3_TextArea>h4 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+
+.travleAreaMain_1_3_TextArea>h5 {
+    font-size: 19px;
+    margin-bottom: 7%;
+}
+
+.travleAreaMain_1_3_TextArea>p {
+    display: inline-block;
+    outline: 1px solid white;
+    border-radius: 10px;
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
