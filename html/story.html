@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="../css/common.css" rel="stylesheet" />
+    <link href="../css/story.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <div class="hleft">
+          <a href="#"><img src="../imgss/logo2.png" /></a>
+        </div>
+        <!-- 메뉴 바-->
+        <div class="hright">
+          <div class="hbox">
+            <a href="#" class="hbt">소개</a>
+            <div class="header-box">
+              <a href="#" class="">M3W1은?</a>
+            </div>
+          </div>
+
+          <div class="hbox">
+            <a href="#" class="hbt">펀딩 성공 사례</a>
+            <div class="header-box">
+              <a href="#" class="">오늘의 뉴스</a>
+              <a href="#" class="">이벤트</a>
+              <a href="#" class=""></a>
+            </div>
+          </div>
+
+          <div class="hbox">
+            <a href="#" class="hbt"> 여행 떠나기</a>
+            <div class="header-box">
+              <a href="#" class="">지역별 여행지</a>
+              <a href="#" class="">사용자가 직접 만드는 여행코스</a>
+            </div>
+          </div>
+
+          <div class="hbox">
+            <a href="#" class="hbt">고객지원</a>
+            <div class="header-box">
+              <a href="#" class="">FAQ</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a class="hlogin" href="./loginPage.html">Login</a>
+          <a class="hlogin" href="">협업문의</a>
+        </div>
+      </div>
+    </header>
+    <!-- 메인 -->
+    <main class="container">
+      <div class="story_header">
+        <img class="story_img" src="../imgss/story1.jpg" />
+        <div class="story_border"></div>
+      </div>
+
+      <div class="story_main">
+        <div class="story_main_2">
+          <img
+            class="story_main_img"
+            src="https://static.makercenter.wadiz.kr/bf/6334/36a46720-8db4-4517-bd2d-db3651fd4afd.png"
+          />
+          <div class="story_main_text">
+            "펀딩 덕분에 저희 고객이 어떤 사람들인지 알 수 있었어요." 소셜벤처
+            프로젝트기억,와디즈펀딩은 더 많은 고객층을 확보하고, 또 분석까지 할
+            수 있는 좋은 기회라고 생각해요. 만약 고민하고 계시다면 꼭
+            경험해보라고 말씀드리고 싶네요.
+          </div>
+        </div>
+
+        <div class="story_main_2">
+          <img class="story_main_img" src="../imgss/story2.jpeg" />
+
+          <div class="story_main_text">
+            저희는 지난 4월 직장인 분들도 쉽게 떠날 수 있는 몽골 주말 여행
+            상품으로 와디즈 펀딩에 처음 도전했어요.와디즈 펀딩은 그 디테일한
+            차별점을 극대화할 수 있는 곳이란 걸 느꼈죠. 브랜드나 제품/서비스
+            이야기를 세세하게 녹일 수 있는 펀딩 스토리에 여행사와 담당자만의
+            개성, 성향을 모두 녹여낼 수 있으니까요. 펀딩 스토리 자체로 여행
+            상품이 차별화될 수 있는 점이 큰 장점이라 생각해요.
+          </div>
+        </div>
+
+        <div class="story_main_2">
+          <img class="story_main_img" src="../imgss/story.33.png" />
+
+          <div class="story_main_text">
+            저희는 아직 작은 브랜드지만, 와디즈 덕분에 사업 방향을 더 단단히 할
+            수 있었고 또 브랜드를 알리는 데 큰 도움을 받았어요. 그래서 저희처럼
+            소규모 브랜드를 운영하시는 분들이라면 더더욱 와디즈 펀딩에 도전해
+            보시라고 말씀드리고 싶어요.
+          </div>
+        </div>
+      </div>
+      <!-- 신청하기 -->
+      <form class="form_main">
+        <h2>
+          <span>m3w1</span>에서 IP라이선스 사업을 함께할 브랜드사를 찾습니다!
+        </h2>
+        <div>
+          <label for="company">1. 소속(회사명)을 작성 해주세요*</label>
+          <input id="company" type="text" required />
+        </div>
+
+        <div>
+          <label for="named">2. 담당자님 성함을 알려주세요*</label>
+          <input id="named" type="text" maxlength="3" required />
+        </div>
+
+        <div>
+          <label for="email">3. 이메일 주소를 알려주세요*</label>
+          <p>메일로 회신을 드릴 예정이오니, 오탈자에 유의해주세요.</p>
+          <input id="email" type="email" required />
+        </div>
+
+        <div>
+          <label for="number">4. 담당자 연락처를 입력해주세요*</label>
+          <p>문자수신이 가능한 휴대폰번호를 기재해주세요.</p>
+          <input id="number" type="text" maxlength="11" required />
+        </div>
+
+        <div>
+          <label for="brand">5. 브랜드를 소개해주세요*</label>
+          <p>어떤 방식의 협업을 고려하고 계신지, 설명부탁드립니다.</p>
+          <textarea id="brand" class="form_textarea" required></textarea>
+        </div>
+        <button type="button" class="btn btn-outline-success">제출하기</button>
+      </form>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var img = document.querySelector(".story_img");
+
+        // 페이지 로드 후 0.5초 후에 rotate 클래스 추가
+        setTimeout(function () {
+          img.classList.add("rotate");
+        }, 500);
+
+        // 1초 후에 rotate 클래스 제거
+        setTimeout(function () {
+          img.classList.remove("rotate");
+        }, 2000);
+      });
+
+      /* javascript */
+      // Intersection Observer 생성
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // 화면에 들어옴
+              entry.target.classList.add("fade-in");
+            } else {
+              // 화면에서 나감
+              entry.target.classList.remove("fade-in");
+            }
+          });
+        },
+        // 화면에서 해당 요소가 40% 이상 보일 경우 화면에 들어온 것으로 판단함
+        { threshold: 0.4 }
+      );
+
+      // 관찰 대상 설정
+      const targetElements = document.querySelectorAll(".story_main_2");
+      targetElements.forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

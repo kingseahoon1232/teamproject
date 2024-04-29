@@ -3,20 +3,20 @@ main {
   height: 100px;
   margin: 0 auto;
 }
-@font-face {
-  font-family: "TTLaundryGothicB";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2")
-    format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
+
 /* 오늘의 패키지 */
 .news {
-  font-size: 50px;
-  width: 500px;
-  display: flex;
-  justify-content: space-between;
-  font-family: TTLaundryGothicB;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(236, 237, 232);
+
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  letter-spacing: 15px;
+  font-size: 16px;
+  text-shadow: 2px 2px 2px gray;
+  margin-bottom: 50px;
 }
 
 /* 패키지박스 */
@@ -41,40 +41,16 @@ main {
   transition: transform 0.5s ease;
 }
 
-@font-face {
-  font-family: "BMJUA";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 .title {
   height: 50px;
   font-size: 26px;
   text-align: center;
   line-height: 40px;
-  font-family: BMJUA;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
 }
 
-@font-face {
-  font-family: "NanumBarunGothic";
-  font-style: normal;
-  font-weight: 400;
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
-      format("embedded-opentype"),
-    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
-      format("woff"),
-    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
-      format("truetype");
-}
 .contents {
   padding: 0 10px;
   height: 190px;
-  font-family: NanumBarunGothic;
 }
 
 .hashtag {
