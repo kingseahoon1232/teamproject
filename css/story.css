@@ -1,0 +1,329 @@
+input {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #e2e3e9;
+  margin: 10px 0;
+  padding-left: 10px;
+}
+input:focus {
+  outline: 1px solid #a5a6ab;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1400px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.hleft {
+  font-size: 40px;
+}
+
+.hleft img {
+  width: 150px;
+  height: 50px;
+}
+
+.hright {
+  display: flex;
+}
+
+.hright .hbox {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 20px;
+}
+
+.hright .hbox2 {
+  display: inline-block;
+  align-items: flex-end;
+  height: 100%;
+  padding-left: 20px;
+}
+
+.hright .hbox .hbt {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  color: black;
+}
+
+.hright .hbox .hbt:hover {
+  color: green;
+}
+
+.header-box {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: green;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.hright .hbox:hover .header-box {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hright .hbox .header-box a {
+  display: inline-block;
+  padding-left: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hlogin {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+}
+
+/*성공사례 메인이미지 */
+.story_header {
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  padding-right: 70px;
+}
+.story_img {
+  position: absolute;
+  left: 30%;
+  top: 65%;
+  width: 400px;
+  height: 600px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: all 1s;
+}
+.story_border {
+  width: 400px;
+  height: 600px;
+  border: 1px solid #cad596;
+  border-radius: 50%;
+  position: absolute;
+  left: 30%;
+  top: 65%;
+  transform: translate(-50%, -50%) rotate(35deg);
+  z-index: 1;
+}
+.rotate {
+  transform: translate(-50%, -50%) rotate(35deg); /* 회전 효과 추가 */
+}
+/* ====== */
+.intro {
+  position: absolute;
+  left: 55%;
+  top: 30%;
+  width: 30%;
+}
+.introBtn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.introBtn button {
+  width: 200px;
+  height: 50px;
+  background: #d7e0b1;
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+}
+.introBox1 {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50px;
+  margin-top: 30px;
+  padding: 30px;
+}
+.introBox2 {
+  display: none;
+  width: 100%;
+  height: 500px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50px;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.intro_img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+/* ================ */
+.tab {
+  float: left;
+  width: 400px;
+  height: 290px;
+}
+.tabnav {
+  font-size: 0;
+  width: 400px;
+  border: 1px solid #ddd;
+}
+.tabnav li {
+  display: inline-block;
+  height: 46px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+.tabnav li a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3px;
+}
+.tabnav li a.active:before {
+  background: #7ea21e;
+}
+.tabnav li a.active {
+  border-bottom: 1px solid #fff;
+}
+.tabnav li a {
+  position: relative;
+  display: block;
+  background: #f8f8f8;
+  color: #000;
+  padding: 0 30px;
+  line-height: 46px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.tabnav li a:hover,
+.tabnav li a.active {
+  background: #fff;
+  color: #7ea21e;
+}
+.tabcontent {
+  padding: 20px;
+  height: 244px;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+/* =============== */
+.story_main {
+  width: 1200px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+.story_main_2 {
+  display: flex;
+  /* 왼쪽에서 오른쪽으로 나타나게 하기 위함 */
+  position: relative;
+  left: -200px;
+  margin: 50px 0 0 50px;
+  /* 투명도 0 (안보임) */
+  opacity: 0;
+  /* 나타나는 효과가 1초동안 발생 */
+  transition: 2s;
+}
+.story_main_img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.story_main_text {
+  display: flex;
+  align-items: center;
+  width: 900px;
+  height: 150px;
+  padding: 0 30px;
+  font-size: 20px;
+}
+
+.story_main_2.fade-in {
+  /* 투명도 0 (보임) */
+  opacity: 1;
+  /* 왼쪽에서 오른쪽으로 나타나게 하기 위함 */
+  left: 0;
+}
+/* 신청하기 */
+.form_main1 {
+  display: flex;
+  width: 1200px;
+}
+.form_main {
+  width: 600px;
+  height: 700px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 50px;
+  border: 1px solid whitesmoke;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.form_textarea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  resize: none;
+  border: 1px solid;
+}
+.form_main p {
+  font-size: 12px;
+  color: #ccc;
+}
+.form_main span {
+  color: #97c3aa;
+  padding: 0 10px 0 10px;
+}
+
+.story_headers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+}
+.story_header2,
+.story_header3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+  height: 100px;
+  border-radius: 30px;
+}
+.story_header2 {
+  background: #e6f8f9;
+}
+.story_header3 {
+  background: #eff3fd;
+}
+.bookImg,
+.moniImg {
+  width: 210px;
+  height: 150px;
+}
+.story_header2 a {
+  color: #00ced9;
+}
+.story_header3 a {
+  color: #85a4f5;
+}
+.story_headers a {
+  margin-top: 20px;
+}
