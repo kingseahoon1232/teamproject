@@ -10,6 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link href="../css/common.css" rel="stylesheet" />
     <link href="../css/story.css" rel="stylesheet" />
   </head>
@@ -63,6 +64,33 @@
       <div class="story_header">
         <img class="story_img" src="../imgss/story1.jpg" />
         <div class="story_border"></div>
+        <!-- ====== -->
+        <div class="intro">
+          <div class="introBtn">
+            <a href="#" id="introBtnGroup1">m3w1와 메이커</a>
+            <a href="#" id="introBtnGroup2">펀딩</a>
+          </div>
+          <div id="intro1" class="introBox1">
+            <img class="intro_img" src="../imgss/intro.png" />
+            <h5><누구나 새로운 도전을 시작할 수 있는곳></h5>
+            <p>
+              와디즈는 새로운 생각을 현실로 만들기 위해 도전하는 메이커와 그
+              도전을 응원하는 서포터가 모인 플랫폼입니다. 참신한 아이템으로 삶을
+              보다 편하게 만들어주고, 서로의 취향을 나누며 즐거움을 주고, 나만의
+              아이디어로 어제보다 나은 내일을 기대할 수 있는 다양한 사람들의
+              가치가 더 많은 사람들에게 닿을 수 있도록 만들어 가겠습니다.
+            </p>
+          </div>
+          <div id="intro2" class="introBox2">
+            <img class="intro_img" src="../imgss/intro2.jpeg" />
+            <h5><누구나 새로운 도전을 시작할 수 있는곳></h5>
+            <p>
+              와디즈는 새로운 생각을 현실로 만들기 위해 도전하는 메이커와 그
+              도전을 응원하는 서포터가 모인 플랫폼입니다. 참신한 아이템으로 삶을
+              보다 편하게 만들어 가겠습니다.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="story_main">
@@ -104,39 +132,54 @@
         </div>
       </div>
       <!-- 신청하기 -->
-      <form class="form_main">
-        <h2>
-          <span>m3w1</span>에서 IP라이선스 사업을 함께할 브랜드사를 찾습니다!
-        </h2>
-        <div>
-          <label for="company">1. 소속(회사명)을 작성 해주세요*</label>
-          <input id="company" type="text" required />
-        </div>
+      <div class="form_main1">
+        <form class="form_main">
+          <h2>
+            <span>m3w1</span>에서 IP라이선스 사업을 함께할 브랜드사를 찾습니다!
+          </h2>
+          <div>
+            <label for="company">1. 소속(회사명)을 작성 해주세요*</label>
+            <input id="company" type="text" required />
+          </div>
 
-        <div>
-          <label for="named">2. 담당자님 성함을 알려주세요*</label>
-          <input id="named" type="text" maxlength="3" required />
-        </div>
+          <div>
+            <label for="named">2. 담당자님 성함을 알려주세요*</label>
+            <input id="named" type="text" maxlength="3" required />
+          </div>
 
-        <div>
-          <label for="email">3. 이메일 주소를 알려주세요*</label>
-          <p>메일로 회신을 드릴 예정이오니, 오탈자에 유의해주세요.</p>
-          <input id="email" type="email" required />
-        </div>
+          <div>
+            <label for="email">3. 이메일 주소를 알려주세요*</label>
+            <p>메일로 회신을 드릴 예정이오니, 오탈자에 유의해주세요.</p>
+            <input id="email" type="email" required />
+          </div>
 
-        <div>
-          <label for="number">4. 담당자 연락처를 입력해주세요*</label>
-          <p>문자수신이 가능한 휴대폰번호를 기재해주세요.</p>
-          <input id="number" type="text" maxlength="11" required />
-        </div>
+          <div>
+            <label for="number">4. 담당자 연락처를 입력해주세요*</label>
+            <p>문자수신이 가능한 휴대폰번호를 기재해주세요.</p>
+            <input id="number" type="text" maxlength="11" required />
+          </div>
 
-        <div>
-          <label for="brand">5. 브랜드를 소개해주세요*</label>
-          <p>어떤 방식의 협업을 고려하고 계신지, 설명부탁드립니다.</p>
-          <textarea id="brand" class="form_textarea" required></textarea>
+          <div>
+            <label for="brand">5. 브랜드를 소개해주세요*</label>
+            <p>어떤 방식의 협업을 고려하고 계신지, 설명부탁드립니다.</p>
+            <textarea id="brand" class="form_textarea" required></textarea>
+          </div>
+          <button type="button" class="btn btn-outline-success">
+            제출하기
+          </button>
+        </form>
+        <div class="story_headers">
+          <div class="story_header2">
+            <img src="/teamproject/imgss/book.png" class="bookImg" />
+            <a href="#">지금 바로 볼 수 있는 와디즈 아카데미</a>
+          </div>
+
+          <div class="story_header3">
+            <img src="/teamproject/imgss/monitor.png" class="moniImg" />
+            <a href="#">펀딩 정보 손쉽게 찾아보는 메이커 센터</a>
+          </div>
         </div>
-        <button type="button" class="btn btn-outline-success">제출하기</button>
-      </form>
+      </div>
     </main>
 
     <script>
@@ -177,7 +220,49 @@
       targetElements.forEach((element) => {
         observer.observe(element);
       });
+
+      /*=============*/
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tabcontent > div");
+        const tabLinks = document.querySelectorAll(".tabnav a");
+
+        tabs.forEach((tab) => (tab.style.display = "none")); // 모든 탭 내용을 숨김
+
+        tabLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault(); // 기본 이벤트 제거
+
+            const targetId = this.getAttribute("href"); // 클릭한 링크의 href 속성 값 가져오기
+            const targetTab = document.querySelector(targetId); // 해당 href 값을 가진 탭 내용 요소 선택
+
+            tabs.forEach((tab) => (tab.style.display = "none")); // 모든 탭 내용을 숨김
+            targetTab.style.display = "block"; // 클릭한 탭 내용을 보여줌
+
+            tabLinks.forEach((link) => link.classList.remove("active")); // 모든 탭 링크에서 active 클래스 제거
+            this.classList.add("active"); // 클릭한 탭 링크에 active 클래스 추가
+          });
+        });
+
+        // 초기에 첫 번째 탭을 활성화
+        tabLinks[0].click();
+      });
+
+      document
+        .getElementById("introBtnGroup1")
+        .addEventListener("click", function () {
+          document.getElementById("intro1").style.display = "block";
+          document.getElementById("intro2").style.display = "none";
+        });
+
+      document
+        .getElementById("introBtnGroup2")
+        .addEventListener("click", function () {
+          document.getElementById("intro1").style.display = "none";
+          document.getElementById("intro2").style.display = "block";
+        });
     </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
