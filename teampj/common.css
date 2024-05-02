@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+/* = = = = = = = = = = = = = = F H D  = = = = = = = = = = = = = = = = = =*/
+@media screen and (min-width: 1450px) {
+  .top-main{
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .contain{
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+/* = = = == ==  = = = = = = = = = = H D  = = = = = = = = = = = = = = = = = = =*/
+@media screen and (min-width: 1050px) and (max-width: 1449px) {
+  .contain {
+    width: 950px;
+    margin: 0 auto;
+  }
+}
+
+/* = = = == ==  = = = = = = = = = = T B  = = = = = = = = = = = = = = = = = = =*/
+@media screen and (min-width: 650px) and (max-width: 1049px) {
+  .contain {
+    width: 550px;
+    margin: 0 auto;
+  }
+}
+
+/* = = = == ==  = = = = = = = = = = M B  = = = = = = = = = = = = = = = = = = =*/
+@media screen and (max-width: 649px) {
+  .contain {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
