@@ -11,12 +11,14 @@
     font-weight: 700;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'SF_HambakSnow';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'BookkMyungjo-Bd';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
@@ -235,14 +237,28 @@ main {
     width: 1400px;
     height: 500px;
     margin-top: 50px;
-    background-image: url(/hy_image/img1.jpg);
-    background-size: cover;
+    background: url(/hy_image/jeju2.jpg) center;
     margin-bottom: 80px;
     align-items: center;
     justify-content: center;
     position: relative;
-    opacity: .9;
+  
 }
+
+.main_Text_Box {
+    position: relative;
+    width: 850px;
+    height: 200px;
+    left: calc((1400px - 850px)/2);
+    top: calc((500px - 200px)/2);
+    /* background-color: #ffffff; */
+    border-radius: 5px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+
+
+}
+
+
 
 .main_Text {
     text-align: center;
@@ -250,21 +266,24 @@ main {
     font-size: 50px;
     text-shadow: 4px 2px 2px black;
     position: relative;
-    top:180px;
+    top: 40px;
+    letter-spacing: 5px;
     font-family: BookkMyungjo-Bd;
 }
 
 .main_subText {
     text-align: center;
     position: relative;
-    top:200px;
+    top:60px;
     color: white;
     font-size: 50px;
     text-shadow: 4px 2px 2px black;
     font-size: 25px;
-    font-family:BookkMyungjo-Bd;
+    letter-spacing: 5px;
 
+    font-family: BookkMyungjo-Bd;
 }
+
 
 /* =========== */
 
@@ -385,5 +404,5 @@ a {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 35px;
-    
+
 }

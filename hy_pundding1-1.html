@@ -1,98 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="hy_pundding1-1.css">
 </head>
+
 <body>
-  <header>
-    <div id="header">
-        <div class="hleft">
-            <a href="/project main/main.html"><img src="/hy_image/logo2.png" /></a>
-        </div>
-        <!-- 메뉴 바-->
-        <div class="hright">
-            <div class="hbox">
-                <a href="#" class="hbt">소개</a>
-                <div class="header-box">
-                    <a href="#" class="">M3W1은?</a>
-                </div>
+    <header>
+        <div id="header">
+            <div class="hleft">
+                <a href="/project main/main.html"><img src="/hy_image/logo2.png" /></a>
             </div>
+            <!-- 메뉴 바-->
+            <div class="hright">
+                <div class="hbox">
+                    <a href="#" class="hbt">소개</a>
+                    <div class="header-box">
+                        <a href="#" class="">M3W1은?</a>
+                    </div>
+                </div>
 
-            <div class="hbox">
-                <a href="#" class="hbt">펀딩 성공 사례</a>
-                <div class="header-box">
-                    <a href="#" class="">오늘의 뉴스</a>
-                    <a href="#" class="">이벤트</a>
-                    <a href="#" class=""></a>
+                <div class="hbox">
+                    <a href="#" class="hbt">펀딩 성공 사례</a>
+                    <div class="header-box">
+                        <a href="#" class="">오늘의 뉴스</a>
+                        <a href="#" class="">이벤트</a>
+                        <a href="#" class=""></a>
+                    </div>
+                </div>
+
+                <div class="hbox">
+                    <a href="#" class="hbt"> 여행 떠나기</a>
+                    <div class="header-box">
+                        <a href="hy_travel_area.html" class="">지역별 여행지</a>
+                        <a href="hy_pundding.html" class="">여행 펀딩</a>
+                    </div>
+                </div>
+
+                <div class="hbox">
+                    <a href="#" class="hbt">고객지원</a>
+                    <div class="header-box">
+                        <a href="#" class="">FAQ</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="hbox">
-                <a href="#" class="hbt"> 여행 떠나기</a>
-                <div class="header-box">
-                    <a href="hy_travel_area.html" class="">지역별 여행지</a>
-                    <a href="hy_pundding.html" class="">여행 펀딩</a>
-                </div>
-            </div>
-
-            <div class="hbox">
-                <a href="#" class="hbt">고객지원</a>
-                <div class="header-box">
-                    <a href="#" class="">FAQ</a>
-                </div>
+            <div>
+                <a class="hlogin" href="./loginPage.html">Login</a>
+                <a class="hlogin" href="">협업문의</a>
             </div>
         </div>
-        <div>
-            <a class="hlogin" href="./loginPage.html">Login</a>
-            <a class="hlogin" href="">협업문의</a>
-        </div>
-    </div>
-    <div class="maintohrmargint">
-        <hr class="hr_size">
+        <div class="maintohrmargint">
+            <hr class="hr_size">
     </header>
     <nav class="hr_size">
         <div class="navArea">
             <ul class="nvaList">
                 <li><a href="/project main/main.html"> <img src="/hy_image/homeicon.png" alt="홈 아이콘"> > </a>
                 </li>
-                <li><a href="/hy_travel_area.html">여행 펀딩 ></a></li>
-                <li><a href="/hy_travel_area_Gangwon.html">강원도 여행지</a></li>
+                <li><a href="/hy_pundding.html">여행 펀딩 </a></li>
+
             </ul>
         </div>
     </nav>
     <main>
         <div class="mainDiv">
-            <div class="wrap">
-                <ul class="slide">
-                  <li class="slide_item">
-                    <img src="/hy_image/5factory.jpg" alt="">
-                  </li>
-                  <li class="slide_item">
-                    <img src="" alt="">
-                  </li>
-                  <li class="slide_item">
-                    <img src="" alt="">
-                  </li>
-                  <li class="slide_item">
-                    <img src="" alt="">
-                  </li>
-                </ul>
-                <div class="bullet_area">
-                  <label class="slide_button" for="radio_1"></label>
-                  <label class="slide_button" for="radio_2"></label>
-                  <label class="slide_button" for="radio_3"></label>
-                  <label class="slide_button" for="radio_4"></label>
+            <div class="section">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+
+                <div class="slidewrap">
+                    <ul class="slidelist">
+                        <li>
+                            <a>
+                                <label for="slide03" class="left"></label>
+                                <img src="/hy_image/buyeo2.jpg">
+                                <label for="slide02" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <label for="slide01" class="left"></label>
+                                <img src="/hy_image/buyeo3.jpg" class="img_Size">
+                                <label for="slide03" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <label for="slide02" class="left"></label>
+                                <img src="/hy_image/buyeo5.jpg" class="img_Size">
+                                <label for="slide01" class="right"></label>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <input type="radio" class="radio_button" id="radio_1" name="slider" checked />
-                <input type="radio" class="radio_button" id="radio_2" name="slider" />
-                <input type="radio" class="radio_button" id="radio_3" name="slider" />
-                <input type="radio" class="radio_button" id="radio_4" name="slider" />
-              </div>
+            </div>
+
+            <div class="main_text">
+                <div>
+                    <h1>[5.0/앵콜] 제대로 쉬어갈 그 곳, 긴 여정의 끝 환희이 순간 '부여집'</h1>
+                    <h3>삶을 닮은 공간 '부여집 여정'으로 초대합니다</h3>
+                    <p>216명 참여</p>
+                    <p>52,000,000원 달성</p>
+                </div>
+                <div>
+
+                </div>
+                <hr>
+                <div class="buttonSpace">
+                    <div class="heratBox">
+
+                    </div>
+
+                    <div class="fundingutton">
+
+                    </div>
+                    <div class="fundingutton">
+
+                    </div>
+                </div>
+            </div>
         </div>
+
     </main>
-    
+
 </body>
+
 </html>
