@@ -1,0 +1,267 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.hleft {
+    font-size: 40px;
+    margin-top: -10px;
+}
+
+.hleft img {
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.hright {
+    display: flex;
+}
+
+.hright .hbox {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.hright .hbox2 {
+    display: inline-block;
+    align-items: flex-end;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.hright .hbox .hbt {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    color: black;
+}
+
+.hright .hbox .hbt:hover {
+    color: green;
+}
+
+.header-box {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: green;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.hright .hbox:hover .header-box {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hright .hbox .header-box a {
+    display: inline-block;
+    padding-left: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hlogin {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+}
+
+.hmv {
+    position: relative;
+    width: 1400px;
+    height: 1000px;
+    /* margin-left: 50px; */
+    z-index: 1;
+}
+
+.hmtext {
+    width: calc(1400px/3);
+    height: 600px;
+    border-radius: 50px;
+    background: white text-decoration none;
+    color: black;
+    margin-top: 50px;
+}
+
+.hcontents {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 25px;
+}
+
+.hhimg {
+    width: 410px;
+    height: 565px;
+    border-radius: 50px;
+}
+
+.himg {
+    width: 410px;
+    height: 400px;
+    border-radius: 50px 50px 0 0;
+    margin-left: 80px;
+    /* ee */
+}
+
+.hsmain {
+    width: 410px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(206, 252, 236);
+    text-align: center;
+    margin-left: 80px;
+}
+
+.hstext {
+    width: 410px;
+    height: 150px;
+    background-color: rgb(206, 252, 236);
+    border-radius: 0 0 50px 50px;
+    text-align: center;
+    margin-left: 80px;
+}
+
+main {
+    width: 1400px;
+    height: 100px;
+    margin: 0 auto;
+
+}
+
+.hr_size {
+    width: 1400px;
+    margin: auto;
+}
+
+.maintohrmargint {
+    margin-top: 50px;
+}
+
+/* ======= nva =================== */
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+.navArea {
+    margin-top: 30px;
+}
+
+.nvaList {
+    margin: 0;
+    padding: 0;
+}
+
+.nvaList li {
+    display: inline-block;
+
+}
+
+.nvaList img {
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+}
+
+.subtitle_Gangwo {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.subtitle_Gangwo h1:after {
+    content: " ";
+    display: block;
+    margin-top: 15px;
+    border-bottom: 2px solid #ccc;
+}
+
+.gangwo_img {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.gangwo_img_Area {
+    display: flex;
+}
+
+.subtitle_Gangwo {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+/* ==================================================== */
+
+.mainDiv {
+    width: 1400px;
+    height: 750px;
+    margin-top: 40px;
+    outline: 1px solid;
+}
+
+.wrap {
+    position: relative;
+  
+    width: 750px;
+    text-align: center;
+  }
+  
+  .radio_area {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .slide {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide_item {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 750px;
+    height: 450px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .radio_button {
+    margin: 0;
+  }
