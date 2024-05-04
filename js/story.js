@@ -12,30 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 2000);
 });
 
-/* javascript */
-// Intersection Observer 생성
-const observer = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        // 화면에 들어옴
-        entry.target.classList.add("fade-in");
-      } else {
-        // 화면에서 나감
-        entry.target.classList.remove("fade-in");
-      }
-    });
-  },
-  // 화면에서 해당 요소가 40% 이상 보일 경우 화면에 들어온 것으로 판단함
-  { threshold: 0.4 }
-);
-
-// 관찰 대상 설정
-const targetElements = document.querySelectorAll(".story_main_2");
-targetElements.forEach((element) => {
-  observer.observe(element);
-});
-
 /*=============*/
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -61,46 +37,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 초기에 첫 번째 탭을 활성화
   tabLinks[0].click();
-});
-
-document
-  .getElementById("introBtnGroup1")
-  .addEventListener("click", function () {
-    document.getElementById("intro1").style.display = "block";
-    document.getElementById("intro2").style.display = "none";
-  });
-
-document
-  .getElementById("introBtnGroup2")
-  .addEventListener("click", function () {
-    document.getElementById("intro1").style.display = "none";
-    document.getElementById("intro2").style.display = "block";
-  });
-
-document.getElementById("successGroup1").addEventListener("click", function () {
-  document.querySelector(".successtap1").style.display = "flex";
-  document.querySelector(".successtap2").style.display = "none";
-  document.querySelector(".successtap3").style.display = "none";
-  document.querySelector(".successtap4").style.display = "none";
-});
-
-document.getElementById("successGroup2").addEventListener("click", function () {
-  document.querySelector(".successtap1").style.display = "none";
-  document.querySelector(".successtap2").style.display = "flex";
-  document.querySelector(".successtap3").style.display = "none";
-  document.querySelector(".successtap4").style.display = "none";
-});
-
-document.getElementById("successGroup3").addEventListener("click", function () {
-  document.querySelector(".successtap1").style.display = "none";
-  document.querySelector(".successtap2").style.display = "none";
-  document.querySelector(".successtap3").style.display = "flex";
-  document.querySelector(".successtap4").style.display = "none";
-});
-
-document.getElementById("successGroup4").addEventListener("click", function () {
-  document.querySelector(".successtap1").style.display = "none";
-  document.querySelector(".successtap2").style.display = "none";
-  document.querySelector(".successtap3").style.display = "none";
-  document.querySelector(".successtap4").style.display = "flex";
 });

@@ -1,0 +1,341 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1400px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.hleft {
+  font-size: 40px;
+}
+
+.hleft img {
+  width: 150px;
+  height: 50px;
+}
+
+.hright {
+  display: flex;
+}
+
+.hright .hbox {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 20px;
+}
+
+.hright .hbox2 {
+  display: inline-block;
+  align-items: flex-end;
+  height: 100%;
+  padding-left: 20px;
+}
+
+.hright .hbox .hbt {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  color: black;
+}
+
+.hright .hbox .hbt:hover {
+  color: green;
+}
+
+.header-box {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: green;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.hright .hbox:hover .header-box {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hright .hbox .header-box a {
+  display: inline-block;
+  padding-left: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hlogin {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+}
+
+/* ================== */
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+@keyframes moveTitle {
+  0% {
+    letter-spacing: 40px;
+    opacity: 0;
+  }
+  100% {
+    letter-spacing: 0;
+    opacity: 1;
+  }
+}
+.bn {
+  width: 100%;
+  height: 700px;
+  background: url(../imgss/success_11.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.bn-title {
+  display: flex;
+  justify-content: center;
+  padding: 350px 0;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: 20px;
+  animation: moveTitle 3s;
+  font-family: KyoboHandwriting2023wsa;
+}
+@font-face {
+  font-family: "KyoboHandwriting2023wsa";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404-2@1.0/KyoboHandwriting2023wsa.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.main_title {
+  margin: 100px 0;
+  text-align: center;
+  font-size: 50px;
+  font-family: Orbit-Regular;
+}
+@font-face {
+  font-family: "Orbit-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ==================== */
+.story_main {
+  height: 900px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.story_main_2,
+.story_main_3 {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  transition: 2s;
+  opacity: 0;
+}
+.story_main_2 {
+  left: -200px;
+}
+.story_main_3 {
+  flex-direction: row-reverse;
+  top: -50px;
+  right: -200px;
+}
+.story_main_img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.story_main_su1,
+.story_main_su2,
+.story_main_su3 {
+  top: -50px;
+}
+.story_main_text,
+.story_main_text1 {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  padding: 0 30px;
+  font-size: 18px;
+}
+.story_main_text {
+  width: 900px;
+}
+.story_main_2.fade-in {
+  opacity: 1;
+  left: 0;
+}
+.story_main_3.fade-in {
+  opacity: 1;
+  right: 0;
+}
+
+/* 펀딩 성공사례 레이아웃 */
+.successBtn1 {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+.successBtn1 button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background: #d7e0b1;
+  border-radius: 20px;
+}
+.successBtn1 button:hover {
+  background:#bcd74e;
+  color: white;
+  transition: 0.6s;
+}
+.successtap1,
+.successtap2,
+.successtap3,
+.successtap4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  margin-top: 50px;
+}
+
+.successtap1 > div,
+.successtap2 > div,
+.successtap3 > div,
+.successtap4 > div {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #eee;
+}
+.successtap1 img,
+.successtap2 img,
+.successtap3 img,
+.successtap4 img {
+  width: 100%;
+  height: 200px;
+}
+
+.successtap1 p,
+.successtap2 p,
+.successtap3 p,
+.successtap4 p {
+  padding: 10px;
+}
+.successtap2,
+.successtap3,
+.successtap4 {
+  display: none;
+}
+
+/* 신청하기 */
+.form_main1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.form_main {
+  width: 600px;
+  height: 700px;
+  margin: 80px 0;
+  padding: 50px;
+  border: 1px solid whitesmoke;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.form_textarea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  resize: none;
+  border: 1px solid;
+}
+.form_main p {
+  font-size: 12px;
+  color: #ccc;
+}
+.form_main span {
+  color: #97c3aa;
+  padding: 0 10px 0 10px;
+}
+.story_headers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #e2e3e9;
+  margin: 10px 0;
+  padding-left: 10px;
+}
+input:focus {
+  outline: 1px solid #a5a6ab;
+}
+
+/* ======================= */
+.tabBtn {
+  width: 500px;
+}
+/* .intro {
+  position: absolute;
+  left: 60%;
+  top: 30%;
+  width: 500px;
+} */
+.introBtn {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
+.introBtn button {
+  width: 200px;
+  height: 50px;
+  background: #d7e0b1;
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+}
+.introBox1,
+.introBox2 {
+  height: 500px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50px;
+  margin-top: 30px;
+  padding: 30px;
+}
+.introBox2 {
+  display: none;
+}
+
+.intro_img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
