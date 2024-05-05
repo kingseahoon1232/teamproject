@@ -292,7 +292,6 @@ main {
     display: grid;
     height: 500px;
     grid-template: repeat(1, 1fr) / repeat(3, 1fr);
-    /* outline: 1px solid black; */
     gap: 40px;
 }
 

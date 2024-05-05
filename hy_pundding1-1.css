@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'TTLaundryGothicB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* ================ */
+
 #header {
     display: flex;
     justify-content: space-between;
@@ -221,7 +231,6 @@ a {
     height: 500px;
     box-sizing: border-box;
     margin-top: 40px;
-    outline: 1px solid;
     position: relative;
 
 }
@@ -337,30 +346,141 @@ a {
     height: 100%;
     box-sizing: border-box;
     padding: 30px;
-    background-color: beige;
-}
-.buttonSpace{
-display: flex;
+    /* background-color: beige; */
 }
 
-.heratBox{
-    width: 50px;
-    height: 50px;
-    outline: 1px solid black;
+/* =================text=========== */
+.main_textBox {
+    text-align: left;
+    @font-face font-family: 'TTLaundryGothicB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.main_textBox>h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+
+}
+
+.main_textBox>h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.main_textBox>p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @font-face font-family: 'TTLaundryGothicB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.main1-1_textBox {
+    float: right;
+    font-size: 20px;
+}
+
+.main_textBox>hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main_textBox>h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* =============button============== */
+.buttonSpace {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heratBox {
+    width: 60px;
+    height: 60px;
     border-radius: 5px;
-    text-align: center;
     background: url(/hy_image/free-icon-heart-4209448.png) 100%/100%;
+    border-style: solid rgb(192, 207, 177);
+    border-width: 1px;
+    transition-duration: 0.5s;
 }
 
-.heratBox:hover ::after{
-    content: " ";
-    background: url(/hy_image/free-icon-heart-4209448.png);
-}
-
-.fundingutton{
-    width: 130px;
-    height: 50px;
-    outline: 1px solid black;
+.clappingBox {
+    width: 60px;
+    height: 60px;
     border-radius: 5px;
+    background: url(/hy_image/clapping-2.png) no-repeat 50%/85%;
+    border-style: solid rgb(192, 207, 177);
+    border-width: 1px;
+    transition-duration: 0.5s;
 }
-  
+
+.fundingbutton {
+    width: 350px;
+    height: 60px;
+
+
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.buttonSpace div:nth-child(3)>button {
+    font-family: 'TTLaundryGothicB';
+    font-size: 20px;
+    background-color: white;
+    border: 0;
+    outline: 0;
+    outline: 1px solid black;
+    transition-duration: 0.5s;
+
+}
+
+.heratBox:hover {
+    background-image: url(/hy_image/free-icon-heart-4209081.png);
+}
+
+.clappingBox:hover {
+    background-image: url(/hy_image/clapping-1.png);
+}
+
+.buttonSpace div:nth-child(3)>button:hover {
+    background-color: rgb(192, 207, 177);
+    outline: none;
+}
+
+/* =============== */
+
+.productDescription_accordion {
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    /* background-color:aqua; */
+    
+    overflow: hidden;
+}
+
+.productDescriptio_btnBox{
+    display: flex;
+    justify-content: center;
+
+}
+.productDescriptio_btn{
+    width: 700px;
+    height: 50px;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    outline: 1px solid rgb(192, 207, 177);
+    color: rgb(192, 207, 177);;
+    font-family: 'TTLaundryGothicB';
+    text-shadow: .5px .5px .5px black;
+}
