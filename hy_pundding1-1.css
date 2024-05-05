@@ -345,40 +345,32 @@ a {
     width: 40%;
     height: 100%;
     box-sizing: border-box;
-    padding: 30px;
-    /* background-color: beige; */
+    padding: 40px;
 }
 
 /* =================text=========== */
 .main_textBox {
     text-align: left;
-    @font-face font-family: 'TTLaundryGothicB';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
+    font-family: 'TTLaundryGothicB';
 
 }
 
 .main_textBox>h1 {
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 15px;
-    font-weight: bold;
+    /* font-weight: bold; */
 
 }
 
 .main_textBox>h3 {
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 30px;
 }
 
 .main_textBox>p {
-    font-size: 20px;
+    font-size: 19px;
     margin-top: 10px;
     margin-bottom: 10px;
-    @font-face font-family: 'TTLaundryGothicB';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
 
 }
 
@@ -394,7 +386,7 @@ a {
 
 .main_textBox>h4 {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 /* =============button============== */
@@ -457,6 +449,114 @@ a {
     outline: none;
 }
 
+
+
+/* ================ */
+.productDescriptioTitle {
+    font-size: 30px;
+    font-family: 'TTLaundryGothicB';
+}
+
+.productDescriptioTitle>h3 {
+    margin-bottom: 35px;
+}
+
+.productDescriptioTitle hr {
+    margin-bottom: 50px;
+}
+
+/* ================== */
+
+
+.productDescriptio_Space {
+    width: 100%;
+    height: 1000px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+
+    gap: 1px;
+}
+
+.productDescriptio_Space_text1 {
+    font-family: 'TTLaundryGothicB';
+    line-height: 100px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.productDescriptio_Space_text2 {
+    margin-top: 45px;
+    font-family: 'TTLaundryGothicB';
+    line-height: 100px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.productDescriptio_Space_text3 {
+    margin-top: 15px;
+    font-family: 'TTLaundryGothicB';
+    line-height: 80px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.productDescriptio_Space_text4 {
+    margin-top: 15px;
+    font-family: 'TTLaundryGothicB';
+    line-height: 80px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.highlight {
+    box-shadow: inset 0 -10px 0 #ffff00;
+}
+
+.highlight1 {
+    box-shadow: inset 0 -10px 0 #b5eb89;
+}
+
+.pd_Ssubtitle {
+    font-size: 28px;
+    font-family: 'TTLaundryGothicB';
+}
+
+.ma1 {
+    background-image: url(/hy_image/buyeo3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+ul>li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.ma2 {
+    background-image: url(/hy_image/buyeo1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ma3 {
+    background-image: url(/hy_image/buyeo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ma4 {
+    background-image: url(/hy_image/buyeo5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ================= */
+.productDescription_accordion hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 /* =============== */
 
 .productDescription_accordion {
@@ -464,23 +564,105 @@ a {
     width: 100%;
     height: 500px;
     /* background-color:aqua; */
-    
-    overflow: hidden;
+
+    /* overflow: hidden; */
 }
 
-.productDescriptio_btnBox{
+.productDescriptio_btnBox {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-
 }
-.productDescriptio_btn{
+
+.productDescriptio_btn {
     width: 700px;
     height: 50px;
     background-color: white;
     border: 0;
     border-radius: 5px;
     outline: 1px solid rgb(192, 207, 177);
-    color: rgb(192, 207, 177);;
+    color: rgb(192, 207, 177);
+
     font-family: 'TTLaundryGothicB';
     text-shadow: .5px .5px .5px black;
+}
+
+/* =============제작 이유 ========= */
+
+.secondSpace {
+    width: 100%;
+    font-family: 'TTLaundryGothicB';
+}
+
+.secondSpace_text {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 75px;
+}
+
+.secondSpace_grid {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.seconeSpace_img {
+    width: 100%;
+    height: 100%;
+    background: url(/hy_image/buyeo9.jpg) no-repeat 100%/100%;
+}
+
+/* ======================== */
+
+.thirdSpace {
+    width: 100%;
+    font-family: 'TTLaundryGothicB';
+    font-size: 20px;
+}
+
+.thirdSpace>p {
+    white-space: pre-line;
+    line-height: 30px;
+}
+
+.thirdSpace_grid {
+    margin-top: 30px;
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr;
+    margin-bottom: 30px;
+}
+
+.thirdSpace_img1 {
+    background: url(/hy_image/buyeo10.jpg) no-repeat 100%/100%;
+}
+
+.thirdSpace_img2 {
+    background: url(/hy_image/buyeo11.jpg) no-repeat 100%/100%;
+}
+
+.fourthSpace {
+    width: 100%;
+}
+
+.fourthSpace_text {
+    white-space: pre-line;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'TTLaundryGothicB';
+}
+
+.lastSpace {
+    width: 100%;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'TTLaundryGothicB';
+    white-space: pre-line;
+
+}
+
+.lastSpace a {
+    color: blue;
 }
