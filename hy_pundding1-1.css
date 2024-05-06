@@ -473,8 +473,9 @@ a {
     height: 1000px;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
-
+    position: relative;
     gap: 1px;
+    box-sizing: border-box;
 }
 
 .productDescriptio_Space_text1 {
@@ -493,26 +494,33 @@ a {
 }
 
 .productDescriptio_Space_text3 {
-    margin-top: 15px;
+    padding: 10px;
     font-family: 'TTLaundryGothicB';
-    line-height: 80px;
+    white-space: pre-line;
     font-size: 20px;
-    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    line-height: 35px;
 }
 
 .productDescriptio_Space_text4 {
-    margin-top: 15px;
+    padding: 10px;
     font-family: 'TTLaundryGothicB';
-    line-height: 80px;
+    white-space: pre-line;
+    display: flex;
+    justify-content: right;
+    align-items: center;
     font-size: 20px;
     text-align: right;
+    line-height: 35px;
 }
 
 .highlight {
     box-shadow: inset 0 -10px 0 #ffff00;
 }
 
-.highlight1 {
+.thirdSpace>p>span {
     box-shadow: inset 0 -10px 0 #b5eb89;
 }
 
@@ -562,10 +570,6 @@ ul>li {
 .productDescription_accordion {
     margin-top: 50px;
     width: 100%;
-    height: 500px;
-    /* background-color:aqua; */
-
-    /* overflow: hidden; */
 }
 
 .productDescriptio_btnBox {
@@ -595,9 +599,13 @@ ul>li {
 }
 
 .secondSpace_text {
-    margin-top: 25px;
+    padding: 10px;
     font-size: 20px;
-    line-height: 75px;
+    white-space: pre-line;
+    padding: 10px;
+    line-height: 30px;
+    display: flex;
+
 }
 
 .secondSpace_grid {
@@ -605,6 +613,8 @@ ul>li {
     width: 100%;
     display: grid;
     grid-template: 1fr / 1fr 1fr;
+    box-sizing: border-box;
+
 }
 
 .seconeSpace_img {
@@ -633,6 +643,8 @@ ul>li {
     display: grid;
     grid-template: 1fr/ 1fr 1fr;
     margin-bottom: 30px;
+    box-sizing: border-box;
+
 }
 
 .thirdSpace_img1 {

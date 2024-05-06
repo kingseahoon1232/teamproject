@@ -386,6 +386,7 @@ a {
     position: relative;
     left: 60%;
     bottom: 40px;
+    transition-duration: 0.5s;
 }
 
 .travleAreaMain_2-1_text>button:hover {
@@ -403,5 +404,4 @@ a {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 35px;
-
 }

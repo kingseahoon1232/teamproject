@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: 'BookkMyungjo-Bd';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-family: 'TTLaundryGothicB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
 }
@@ -180,6 +180,7 @@ main {
     box-sizing: border-box;
     width: 120px;
     margin-bottom: 50px;
+    
 }
 
 .travleAreaClassify ul>li :hover {
@@ -447,6 +448,7 @@ a {
     position: relative;
     left: 60%;
     bottom: 40px;
+
 }
 
 .travleAreaMain_2-1_text>button:hover {
