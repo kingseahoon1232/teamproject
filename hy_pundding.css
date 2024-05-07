@@ -242,7 +242,7 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
-  
+
 }
 
 .main_Text_Box {
@@ -274,7 +274,7 @@ main {
 .main_subText {
     text-align: center;
     position: relative;
-    top:60px;
+    top: 60px;
     color: white;
     font-size: 50px;
     text-shadow: 4px 2px 2px black;
@@ -302,7 +302,8 @@ main {
 
 .travleAreaMain_2-1_img {
     height: 60%;
-    background: url(/hy_image/hadomun.jpg) 0/cover;
+    background: url(/hy_image/buyeo2.jpg) 0/cover;
+    background-position: center;
 }
 
 .travleAreaMain_2-1_text {
