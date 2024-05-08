@@ -1,0 +1,28 @@
+        body {
+            color:skyblue;
+            text-align: center;
+        }
+
+        /* 
+            스타일 소성 적용 시 마지막 속성의 세미콜론은 생략 가능하지만
+            차후 속성이 추가되는 경우의 유지보수성을 위해 표기하는 습관을 권장.
+        */
+        ol {
+            color: green;
+            text-align: left
+        }
+
+        div {
+            font-size: 200%;
+        }
+
+        /*         
+            p 태그에 대한 선택자로 font-size 속성 적용 시 최상단의 p 태그도 속성 값 적용이 되므로
+            아래와 같이 id 선택자로 개별 지정을 하거나 자식(Child) 선택자를 이용하여 개별 지정.
+         */
+        #childOfDiv {
+            font-size: 50%
+        }
+        / div>p {
+            font-size: 50%
+        }
