@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'KimjungchulMyungjo-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulMyungjo-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BookkMyungjo-Bd';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    width: 1400px;
+    margin: auto;
+
+}
+
+/* =================네비바================= */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
+    height: 70px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: whitesmoke;
+    z-index: 3;
+}
+
+.hleft {
+    font-size: 40px;
+}
+
+.hleft img {
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.hright {
+    display: flex;
+}
+
+.hright .hbox {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.hright .hbox2 {
+    display: inline-block;
+    align-items: flex-end;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.hright .hbox .hbt {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    color: black;
+}
+
+.hright .hbox .hbt:hover {
+    color: green;
+}
+
+.header-box {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: green;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.hright .hbox:hover .header-box {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hright .hbox .header-box a {
+    display: inline-block;
+    padding-left: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hlogin {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+}
+
+.hmv {
+    position: relative;
+    width: 1400px;
+    height: 1000px;
+    /* margin-left: 50px; */
+    z-index: 1;
+}
+
+.hmtext {
+    width: calc(1400px/3);
+    height: 600px;
+    border-radius: 50px;
+    background: white text-decoration none;
+    color: black;
+    margin-top: 50px;
+}
+
+.hcontents {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 25px;
+}
+
+.hhimg {
+    width: 410px;
+    height: 565px;
+    border-radius: 50px;
+}
+
+.himg {
+    width: 410px;
+    height: 400px;
+    border-radius: 50px 50px 0 0;
+    margin-left: 80px;
+    /* ee */
+}
+
+.hsmain {
+    width: 410px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(206, 252, 236);
+    text-align: center;
+    margin-left: 80px;
+}
+
+.hstext {
+    width: 410px;
+    height: 150px;
+    background-color: rgb(206, 252, 236);
+    border-radius: 0 0 50px 50px;
+    text-align: center;
+    margin-left: 80px;
+}
+
+main {
+    width: 1400px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+/* ========= */
+.navArea {
+    margin-top: 70px;
+}
+
+.nvaList {
+    margin: 0;
+    padding: 0;
+}
+
+.nvaList li {
+    display: inline-block;
+
+}
+
+.nvaList img {
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+}
+
+/* ========= */
+.subtitle {
+    margin-top: 70px;
+    font-family: BookkMyungjo-Bd;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.subtitle h1 {
+    text-align: center;
+
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 1px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 16px 0;
+    grid-gap: 22px;
+}
+
+.subtitle h1:after,
+.subtitle h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid #ccc;
+
+}
+
+/* ======= */
+.main_img {
+    width: 1400px;
+    height: 500px;
+    margin-top: 120px;
+    background: url(../image/jeju2.jpg) center;
+    margin-bottom: 80px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+}
+
+.main_Text_Box {
+    position: relative;
+    width: 850px;
+    height: 200px;
+    left: calc((1400px - 850px)/2);
+    top: calc((500px - 200px)/2);
+    /* background-color: #ffffff; */
+    border-radius: 5px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+
+
+}
+
+
+
+.main_Text {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    text-shadow: 4px 2px 2px black;
+    position: relative;
+    top: 40px;
+    letter-spacing: 5px;
+    font-family: BookkMyungjo-Bd;
+}
+
+.main_subText {
+    text-align: center;
+    position: relative;
+    top:60px;
+    color: white;
+    font-size: 50px;
+    text-shadow: 4px 2px 2px black;
+    font-size: 25px;
+    letter-spacing: 5px;
+
+    font-family: BookkMyungjo-Bd;
+}
+
+
+/* =========== */
+
+
+.travleAreaMain_2_grid {
+    display: grid;
+    height: 500px;
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+    /* outline: 1px solid black; */
+    gap: 40px;
+}
+
+.travleAreaMain_2-1 {
+    outline: 3px solid lightgray;
+    display: inline-block;
+}
+
+.travleAreaMain_2-1_img {
+    height: 60%;
+    background: url(../image/buyeo2.jpg) 0/cover;
+}
+
+.travleAreaMain_2-1_text {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.travleAreaMain_2-1_text>sup {
+    font-size: 20px;
+}
+
+.travleAreaMain_2-1_text>sub {
+    font-size: 20px;
+}
+
+.travleAreaMain_2-1_text>h2 {
+    margin-bottom: 30px;
+}
+
+
+
+.travleAreaMain_2-2_img {
+    height: 60%;
+    background: url(../image/camping.png) 0/cover;
+}
+
+.travleAreaMain_2-3_img {
+    height: 60%;
+    background: url(../image/naju.jpg) 0/cover;
+}
+
+.travleAreaMain_2-4_img {
+    height: 60%;
+    background: url(../image/suyanggaeLightTunnel.png) 0/cover;
+}
+
+.travleAreaMain_2-5_img {
+    height: 60%;
+    background: url(../image/gayatgo.jpg) 0/cover;
+}
+
+.travleAreaMain_2-6_img {
+    height: 60%;
+    background: url(../image/5factory.jpg) 0/cover;
+}
+
+.travleAreaMain_2-7_img {
+    height: 60%;
+    background: url(../image/tongyeongNaples.jpg) 0/cover;
+}
+
+.travleAreaMain_2-8_img {
+    height: 60%;
+    background: url(../image/Suncheon1.jpg) 0/cover;
+}
+
+.travleAreaMain_2-9_img {
+    height: 60%;
+    background: url(../image/geoje2.jpg) 0/cover;
+}
+
+.blank {
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.travleAreaMain_2-1_text>button {
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    border: 1px solid rgb(192, 207, 177);
+    border-radius: 40px;
+    background-color: white;
+    position: relative;
+    left: 60%;
+    bottom: 40px;
+}
+
+.travleAreaMain_2-1_text>button:hover {
+    background-color: rgb(192, 207, 177);
+}
+
+
+#textRange li {
+    list-style: none;
+}
+
+
+#textRange li:nth-child(2) {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 35px;
+
+}
+
+footer {
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .footer-container {
+    width: 1400px;
+    height: 200px;
+    margin: 0 auto; /* 가운데 정렬 */
+    background-color: #333; /* 배경색을 여기에 적용 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 수직 중앙 정렬 */
+    align-items: center; /* 수평 중앙 정렬 */
+  }
+  
+  .footer-top p,
+  .footer-middle h1,
+  .footer-middle p {
+    margin: 5px 0; /* 간격 조정 */
+  }
