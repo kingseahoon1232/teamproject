@@ -99,7 +99,8 @@
     width: calc(1400px/3);
     height: 600px;
     border-radius: 50px;
-    background: white text-decoration none;
+    background: white
+    text-decoration none;
     color: black;
     margin-top: 50px;
 }
