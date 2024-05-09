@@ -141,7 +141,7 @@ header {
 
 .left2 {
     grid-area: 1/1/5/2;
-    background: url(../image/object.png)no-repeat 0/600px 750px;
+    background: url(../image/happy.gif)no-repeat 0/600px 750px;
     margin-right: 10px;
     font-size: 40px;
 }
