@@ -9,169 +9,172 @@
 </head>
 
 <body>
-  <div class="member">
-    <a href="../index.html"><img class="logo" src="../image/logo2.png"></a>
-    <div class="field">
-      <b>아이디</b>
-      <span class="placehold-text"><input type="text"></span>
-      <select class="box" id="domain-list">
-        <option value="naver.com">naver.com</option>
-        <option value="google.com">google.com</option>
-        <option value="hanmail.net">hanmail.net</option>
-        <option value="nate.com">nate.com</option>
-        <option value="kakao.com">kakao.com</option>
-      </select>
-    </div>
-    <div class="field">
-      <b>비밀번호</b>
-      <input type="password">
-    </div>
-    <div class="field">
-      <b>비밀번호 재확인</b>
-      <input type="password">
-    </div>
-    <div class="field">
-      <b>이름</b>
-      <input type="text">
-    </div>
-
-    <div class="field birth">
-      <b>생년월일</b>
-      <div>
-        <select>
-          <option value="">년</option>
-          <option value="">2000</option>
-          <option value="">1999</option>
-          <option value="">1998</option>
-          <option value="">1997</option>
-          <option value="">1996</option>
-          <option value="">1995</option>
-          <option value="">1994</option>
-          <option value="">1993</option>
-          <option value="">1992</option>
-          <option value="">1991</option>
-          <option value="">1990</option>
-          <option value="">1989</option>
-          <option value="">1988</option>
-          <option value="">1987</option>
-          <option value="">1986</option>
-          <option value="">1985</option>
-          <option value="">1984</option>
-          <option value="">1983</option>
-          <option value="">1982</option>
-          <option value="">1981</option>
-          <option value="">1980</option>
-          <option value="">1979</option>
-          <option value="">1978</option>
-          <option value="">1977</option>
-          <option value="">1976</option>
-          <option value="">1975</option>
-          <option value="">1974</option>
-          <option value="">1973</option>
-          <option value="">1972</option>
-          <option value="">1971</option>
-          <option value="">1970</option>
-          <option value="">1969</option>
-          <option value="">1968</option>
-          <option value="">1967</option>
-          <option value="">1966</option>
-          <option value="">1965</option>
-          <option value="">1964</option>
-          <option value="">1963</option>
-          <option value="">1962</option>
-          <option value="">1961</option>
-          <option value="">1960</option>
-          <option value="">1959</option>
-          <option value="">1958</option>
-          <option value="">1957</option>
-          <option value="">1956</option>
-          <option value="">1955</option>
-          <option value="">1954</option>
-          <option value="">1953</option>
-          <option value="">1952</option>
-          <option value="">1951</option>
-          <option value="">1950</option>
+  <form action="">
+    <div class="member">
+      <a href="mainpage.html"><img class="logo" src="../image/logo2.png"></a>
+      <div class="field">
+        <b>아이디</b>
+        <form>
+          <input type="text" maxlength="15" required>
+        </form>
+        <select class="box" id="domain-list">
+          <option value="naver.com">naver.com</option>
+          <option value="google.com">google.com</option>
+          <option value="hanmail.net">hanmail.net</option>
+          <option value="nate.com">nate.com</option>
+          <option value="kakao.com">kakao.com</option>
         </select>
+      </div>
+      <div class="field">
+        <b>비밀번호</b>
+        <input type="password" placeholder="8자 이상 15자 이하" minlength="8" maxlength="15" required>
+      </div>
+      <div class="field">
+        <b>비밀번호 재확인</b>
+        <input type="password" placeholder="8자 이상 15자 이하" minlength="8" maxlength="15" required>
+      </div>
+      <div class="field">
+        <b>이름</b>
+        <input type="text" minlength="2" maxlength="4" required>
+      </div>
+
+      <div class="field birth">
+        <b>생년월일</b>
+        <div>
+          <select required>
+            <option value="">년</option>
+            <option value="">2000</option>
+            <option value="">1999</option>
+            <option value="">1998</option>
+            <option value="">1997</option>
+            <option value="">1996</option>
+            <option value="">1995</option>
+            <option value="">1994</option>
+            <option value="">1993</option>
+            <option value="">1992</option>
+            <option value="">1991</option>
+            <option value="">1990</option>
+            <option value="">1989</option>
+            <option value="">1988</option>
+            <option value="">1987</option>
+            <option value="">1986</option>
+            <option value="">1985</option>
+            <option value="">1984</option>
+            <option value="">1983</option>
+            <option value="">1982</option>
+            <option value="">1981</option>
+            <option value="">1980</option>
+            <option value="">1979</option>
+            <option value="">1978</option>
+            <option value="">1977</option>
+            <option value="">1976</option>
+            <option value="">1975</option>
+            <option value="">1974</option>
+            <option value="">1973</option>
+            <option value="">1972</option>
+            <option value="">1971</option>
+            <option value="">1970</option>
+            <option value="">1969</option>
+            <option value="">1968</option>
+            <option value="">1967</option>
+            <option value="">1966</option>
+            <option value="">1965</option>
+            <option value="">1964</option>
+            <option value="">1963</option>
+            <option value="">1962</option>
+            <option value="">1961</option>
+            <option value="">1960</option>
+            <option value="">1959</option>
+            <option value="">1958</option>
+            <option value="">1957</option>
+            <option value="">1956</option>
+            <option value="">1955</option>
+            <option value="">1954</option>
+            <option value="">1953</option>
+            <option value="">1952</option>
+            <option value="">1951</option>
+            <option value="">1950</option>
+          </select>
+          <select required>
+            <option value="">월</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+            <option value="">11</option>
+            <option value="">12</option>
+          </select>
+          <select required>
+            <option value="">일</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+            <option value="">11</option>
+            <option value="">12</option>
+            <option value="">13</option>
+            <option value="">14</option>
+            <option value="">15</option>
+            <option value="">16</option>
+            <option value="">17</option>
+            <option value="">18</option>
+            <option value="">19</option>
+            <option value="">20</option>
+            <option value="">21</option>
+            <option value="">22</option>
+            <option value="">23</option>
+            <option value="">24</option>
+            <option value="">25</option>
+            <option value="">26</option>
+            <option value="">27</option>
+            <option value="">28</option>
+            <option value="">29</option>
+            <option value="">30</option>
+            <option value="">31</option>
+          </select>
+
+        </div>
+      </div>
+
+      <div class="field gender">
+        <b>성별</b>
+        <div>
+          <label><input type="radio" name="gender" required />남자</label>
+          <label><input type="radio" name="gender" required />여자</label>
+          <label><input type="radio" name="gender" required />선택안함</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <b>이메일<small>(선택)</small></b>
+        <input type="email" placeholder="선택입력">
+      </div>
+
+      <div class="field tel-number">
+        <b>휴대전화</b>
         <select>
-          <option value="">월</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
-          <option value="">5</option>
-          <option value="">6</option>
-          <option value="">7</option>
-          <option value="">8</option>
-          <option value="">9</option>
-          <option value="">10</option>
-          <option value="">11</option>
-          <option value="">12</option>
+          <option value="">대한민국 +82</option>
         </select>
-        <select>
-          <option value="">일</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
-          <option value="">5</option>
-          <option value="">6</option>
-          <option value="">7</option>
-          <option value="">8</option>
-          <option value="">9</option>
-          <option value="">10</option>
-          <option value="">11</option>
-          <option value="">12</option>
-          <option value="">13</option>
-          <option value="">14</option>
-          <option value="">15</option>
-          <option value="">16</option>
-          <option value="">17</option>
-          <option value="">18</option>
-          <option value="">19</option>
-          <option value="">20</option>
-          <option value="">21</option>
-          <option value="">22</option>
-          <option value="">23</option>
-          <option value="">24</option>
-          <option value="">25</option>
-          <option value="">26</option>
-          <option value="">27</option>
-          <option value="">28</option>
-          <option value="">29</option>
-          <option value="">30</option>
-          <option value="">31</option>
-        </select>
-
+        <div>
+          <input type="tel" placeholder="전화번호 입력" minlength="10" maxlength="11" required>
+        </div>
       </div>
+
+      <button type="submit">가입하기</button>
     </div>
-
-    <div class="field gender">
-      <b>성별</b>
-      <div>
-        <label><input type="radio" name="gender">남자</label>
-        <label><input tlype="radio" name="gender">여자</label>
-        <label><input type="radio" name="gender">선택안함</label>
-      </div>
-    </div>
-
-    <div class="field">
-      <b>본인 확인 이메일<small>(선택)</small></b>
-      <input type="email" placeholder="선택입력">
-    </div>
-
-    <div class="field tel-number">
-      <b>휴대전화</b>
-      <select>
-        <option value="">대한민국 +82</option>
-      </select>
-      <div>
-        <input type="tel" placeholder="전화번호 입력">
-      </div>
-    </div>
-
-    <a href="../index.html"><input type="submit" value="가입하기"></a>
-  </div>
-
+  </form>
 </body>
 
 </html>

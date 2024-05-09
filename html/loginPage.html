@@ -16,14 +16,14 @@
         <div class="login-wrapper">
             <h2>Login</h2>
             <form method="post" action="서버의url" id="login-form">
-                <input type="text" name="userName" placeholder="Email">
-                <input type="password" name="userPassword" placeholder="Password">
+                <input type="text" name="userName" placeholder="Email" maxlength="15" required>
+                <input type="password" name="userPassword" placeholder="Password" minlength="8" maxlength="15" required>
                 <label for="remember-check">
                     <input type="checkbox" id="remember-check"> 아이디 저장하기
                 </label>
-                <a href="../index.html">Login</a>
+                <p>
+                <button>Login</button>
                 <a href="./membership.html">회원가입</a>
-
             </form>
         </div>
         <div class="footer-container">
