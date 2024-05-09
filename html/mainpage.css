@@ -5,7 +5,8 @@
 }
 
 body {
-    width: 100%;
+    width: 1400px;
+    margin: auto;
 }
 
 header {
@@ -21,13 +22,16 @@ header {
     align-items: center;
     width: 1400px;
     height: 70px;
-    margin: 0 auto;
+    margin: auto;
     background-color: whitesmoke;
-    z-index: 1;
+    z-index: 5;
+    position: relative;
+    /* 부모가 기준점이 되어야 애들이 잡히기 때문에 relative 걸어야 absolute가 먹힘 */
 }
 
 .hleft {
     font-size: 40px;
+    margin-bottom: 10px;
 }
 
 .hleft img {
@@ -42,7 +46,7 @@ header {
 .hright .hbox {
     display: flex;
     align-items: center;
-    height: 1400px;
+    height: 100px;
     padding-left: 20px;
 }
 
@@ -61,14 +65,14 @@ header {
     color: black;
 }
 
-.hright .hbox .hbt:hover {
+/* .hright .hbox .hbt:hover {
     color: green;
-}
+} */
 
 .header-box {
     position: absolute;
     top: 60px;
-    right: 105px;
+    right: 0;
     width: 1400px;
     text-align: center;
     padding: 20px;
@@ -77,7 +81,8 @@ header {
     opacity: 0;
     visibility: hidden;
     z-index: 2;
-    margin-right: 145px;
+    /* margin-right: 155px; */
+    
 }
 
 .hright .hbox:hover .header-box {
@@ -101,12 +106,21 @@ header {
     margin-right: 30px;
 }
 
-.hmv {
+.wrapper {
     position: relative;
-    width: 1390px;
-    height: 787px;
-    margin-top: 125px;
-    margin-left: 265px;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-top: 100px;
+    z-index: -1;
+}
+
+.hmv {
+    position: absolute;
+    width: 1400px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* margin-left: 265px; */
     z-index: -1;
 }
 
@@ -114,7 +128,7 @@ header {
     width: calc(1400px/3);
     height: 600px;
     border-radius: 50px;
-    background: white;
+    background: white
     text-decoration: none;
     color: black;
     margin-top: 50px;
@@ -161,7 +175,7 @@ header {
 
 main {
     width: 1400px;
-    height: 100px;
+    height: 100vh;
     margin: 0 auto;
 }
 
@@ -285,18 +299,6 @@ main {
     line-height: 40px;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    margin: auto;
-}
-
-.allPageSize {
-    width: 1400px;
-    height: 1000px;
-}
-
-
 .firstSpace {
     height: 50px;
     width: 1400px;
@@ -309,7 +311,7 @@ main {
     font-size: 16px;
     text-shadow: 2px 2px 2px gray;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .fundingSpace {
@@ -334,7 +336,7 @@ main {
     text-align: left;
     word-break: normal;
     padding: 30px;
-    
+
 }
 
 .fundingImgSpace {
@@ -390,163 +392,11 @@ main {
     color: white;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.contain {
-    position: relative;
-    width: 1400px;
-    height: 100px;
-    color: #495057;
-    /* background-color: aqua; */
-}
-
-.faq-main {
-    width: 100%;
-    height: 100px;
-    line-height: 100px;
-    display: flex;
-    font-weight: bold;
-    justify-content: center;
-}
-
-.faq-main h1 {
-    display: flex;
-    line-height: 100px;
-    color: black;
-    font-size: 36px;
-}
-
-.tabs button.active {
-    border-bottom: 4px solid rgb(245, 127, 129);
-    color: rgb(245, 127, 129);
-}
-
-.tabs button {
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 0px 0px 5px 0px;
-    font-size: 20px;
-    background-color: white;
-}
-
-.tabs {
-    width: 100%;
-    height: auto;
-    border: none;
-    background: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    gap: 16px;
-    margin-top: 16px;
-}
-
-.taps_help_main {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-}
-
-.help-warp {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    height: 100px;
-}
-
-.help-warp li {
-    display: inline-block;
-    text-align: center;
-    vertical-align: bottom;
-    line-height: 48px;
-    margin: 10px;
-    width: 110px;
-    height: 48px;
-    border-radius: 8px;
-}
-
-.help-warp li:nth-child(1) {
-    border: 1px solid rgb(245, 127, 129);
-    background-color: rgb(253, 240, 241);
-    border-radius: 35px;
-}
-
-.list-board {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 335px;
-}
-
-.list-contain {
-    gap: 16px;
-    /* 16픽셀만큼 띄움 */
-    display: flex;
-    justify-content: center;
-    border-radius: 8px;
-    width: 3000px;
-    height: 140px;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-
-.list-contain a {
-    flex-direction: column;
-    display: flex;
-    border: 1px solid #d9d9d9;
-    justify-content: space-evenly;
-    width: 330px;
-    height: 140px;
-    padding: 20px;
-    text-decoration: none;
-    color: #495057;
-}
-
-.list-contain a:hover {
-    background-color: rgb(253, 240, 241);
-    transform: scale(1.05);
-    border: 1px solid rgb(245, 127, 129);
-    transition: all 1s;
-    border-radius: 7px;
-}
-
-.help-warp ul {
-    padding: 0;
-    /* bootstrap 안에 있는 요소들중에 padding 2rem제거 */
-}
-
 /* 푸터컨테인 */
 .f-contain {
     width: 100%;
     height: 300px;
     background-color: #495057;
-}
-
-.f-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 300px;
-    /* background-color: red; */
-}
-
-.logo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 36px;
-    color: white;
 }
 
 .fblank {
